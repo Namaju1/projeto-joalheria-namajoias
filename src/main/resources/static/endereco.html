@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Endereço</title>
+    <link rel="stylesheet" href="css/endereco.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="submit.html" method="post">
+            <h2>Cadastro de Endereço</h2>
+            <div class="input-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" maxlength="8" required>
+            </div>
+
+            <div class="input-group">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" maxlength="50" required>
+            </div>
+
+            <div class="input-group">
+                <label for="numCasa">Número da Casa:</label>
+                <input type="text" id="numCasa" name="numCasa" maxlength="10" required>
+            </div>
+
+            <div class="input-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" maxlength="50" required>
+            </div>
+
+            <div class="input-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" maxlength="50" required>
+            </div>
+
+            <div class="input-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" maxlength="50">
+            </div>
+
+            <div class="input-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" maxlength="50" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
