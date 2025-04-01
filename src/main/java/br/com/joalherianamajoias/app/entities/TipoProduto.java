@@ -22,6 +22,9 @@ public class TipoProduto {
 			@Column(name = "descricao", nullable = false, length = 100)
 			private String descricao;
 			
+			@Column(name = "nome", nullable = false, length = 100)
+			private String nome;
+			
 			@ManyToOne
 			@JoinColumn(name = "PRODUTO_id_produto")
 			private Produto produto;
@@ -31,9 +34,10 @@ public class TipoProduto {
 
 			}
 			
-			public TipoProduto(Long idTipoProduto, String descricao) {
+			public TipoProduto(Long idTipoProduto, String descricao, String nome) {
 				this.idTipoProduto = idTipoProduto;
 				this.descricao = descricao;
+				this.nome = nome;
 			}
 
 			public Long getIdTipoProduto() {
@@ -52,6 +56,14 @@ public class TipoProduto {
 				this.descricao = descricao;
 			}
 
+			public String getNome() {
+				return nome;
+			}
+
+			public void setNome(String nome) {
+				this.nome = nome;
+			}
+
 			public Produto getProduto() {
 				return produto;
 			}
@@ -59,5 +71,6 @@ public class TipoProduto {
 			public void setProduto(Produto produto) {
 				this.produto = produto;
 			}
+
 			
 }

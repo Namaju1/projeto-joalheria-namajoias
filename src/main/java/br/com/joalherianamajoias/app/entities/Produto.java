@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -28,7 +30,10 @@ public class Produto {
 			
 			@Column(name = "imgUrl", nullable = false, length = 100, unique = false)
 			private String imgUrl;
-
+			
+			@ManyToOne
+			@JoinColumn(name = "tipo_produto", nullable = false)
+			private TipoProduto tipoProduto;
 
 //Construtores
 	public Produto() {
