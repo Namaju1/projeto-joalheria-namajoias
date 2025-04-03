@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const nomeProduto = document.getElementById("nomeProduto").value;
 		const preco = document.getElementById("preco").value;
 		const cor = document.getElementById("cor").value;
-		const categoriaProduto = parseInt(document.getElementById("categoriaProduto").value);
-		const tipoProduto = parseInt(document.getElementById("tipoProduto").value);
 
 		try {
 			const response = await fetch("http://localhost:8080/cadastroproduto", {
@@ -20,13 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				body: JSON.stringify({
                     nomeProduto,
 					preco,
-					cor,
-					categoriaProduto: {
-					     id: categoriaProduto
-					               }, 
-					tipoProduto: {
-					     id: tipoProduto
-					               }
+					cor
 				}),
 			});
 
