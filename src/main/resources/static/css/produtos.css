@@ -105,3 +105,10 @@ section.products h2 {
     background-color: #4A8666;
     color: rgb(255, 255, 255);
 }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4A8666;
+    color: white;
+}

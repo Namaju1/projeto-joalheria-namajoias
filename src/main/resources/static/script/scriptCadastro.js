@@ -22,10 +22,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     cpf,
                     email, 
                     telefone, 
-                    dt_nascimento,
-					tipoUsuario: {
-						id:2
-					}
+                    dt_nascimento
                 }),
             });
             
