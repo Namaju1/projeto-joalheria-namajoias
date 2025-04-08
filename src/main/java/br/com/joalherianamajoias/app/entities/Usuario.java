@@ -39,7 +39,7 @@ public class Usuario {
 	private LocalDate data_nascimento;
 	
 	@ManyToOne
-	@JoinColumn(name = "tipo_usuario", nullable = false)
+	@JoinColumn(name = "tipo_usuario")
 	private TipoUsuario tipoUsuario;
 
 	// Construtores

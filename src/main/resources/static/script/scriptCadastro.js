@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     data_nascimento,
 					senha,
 					tipoUsuario:{
-						id: 2
+						id_usuario: 2
 					}
                 }),
             });
