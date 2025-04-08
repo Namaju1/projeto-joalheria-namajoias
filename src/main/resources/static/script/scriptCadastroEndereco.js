@@ -14,6 +14,7 @@ document.getElementById("cep").addEventListener("input", async function() {
 				return;
 			}
 			document.getElementById("rua").value = dados.logradouro;
+			document.getElementById("numero").value = dados.numero;
 			document.getElementById("bairro").value = dados.bairro;
 			document.getElementById("cidade").value = dados.localidade;
 			document.getElementById("UF").value = dados.uf;
@@ -45,12 +46,12 @@ document.addEventListener("DOMContentLoaded",()=>{
                     "content-type":"application/json"
                 },
                 body:JSON.stringify({
-                    rua,
+					cep,
+					rua,
                     numero,
                     bairro, 
                     cidade, 
-                    UF,
-                    cep
+                    UF
                 }),
             });
             

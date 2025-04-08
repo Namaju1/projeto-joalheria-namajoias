@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             });
             
             if (response.ok){
-                window.location.href = "cadastroendereco.html";
+                window.location.href = "endereco.html";
             }else{
                 alert("Erro ao cadastrar o cliente");
             }
