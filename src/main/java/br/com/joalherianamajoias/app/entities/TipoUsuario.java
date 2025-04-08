@@ -18,8 +18,8 @@ public class TipoUsuario {
 		@Column(name = "idTipoUsuario", nullable = false)
 		private Long idTipoUsuario;
 		
-		@Column(name = "nome", nullable = false, length = 100)
-		private String nome;
+		@Column(name = "nomeUsuario", nullable = false, length = 100)
+		private String nomeUsuario;
 		
 		@ManyToOne
 		@JoinColumn(name = "USUARIO_id_usuario")
@@ -30,9 +30,9 @@ public class TipoUsuario {
 
 		}
 		
-		public TipoUsuario(Long idTipoUsuario, String nome) {
+		public TipoUsuario(Long idTipoUsuario, String nomeUsuario) {
 			this.idTipoUsuario = idTipoUsuario;
-			this.nome = nome;
+			this.nomeUsuario = nomeUsuario;
 }
 
 		public Long getIdTipoUsuario() {
@@ -43,12 +43,12 @@ public class TipoUsuario {
 			this.idTipoUsuario = idTipoUsuario;
 		}
 
-		public String getNome() {
-			return nome;
+		public String getNomeUsuario() {
+			return nomeUsuario;
 		}
 
-		public void setNome(String nome) {
-			this.nome = nome;
+		public void setNomeUsuario(String nomeUsuario) {
+			this.nomeUsuario = nomeUsuario;
 		}
 
 		public Usuario getUsuario() {
