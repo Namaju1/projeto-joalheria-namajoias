@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     form.addEventListener("submit", async(event) =>{
         event.preventDefault();
         
-        const nomeCliente = document.getElementById("nome").value;
+        const nomeUsuario = document.getElementById("nomeUsuario").value;
         const cpf= document.getElementById("cpf").value;
         const email = document.getElementById("email").value;
         const telefone = document.getElementById("telefone").value;
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     "content-type":"application/json"
                 },
                 body:JSON.stringify({
-                    nomeCliente,
+                    nomeUsuario,
                     cpf,
                     email, 
                     telefone, 
