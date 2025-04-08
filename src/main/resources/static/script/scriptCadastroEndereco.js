@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             });
             
             if (response.ok){
-                window.location.href = "produto.html";
+                window.location.href = "sucessocadastro.html";
             }else{
                 alert("Erro ao cadastrar o Endereco");
             }

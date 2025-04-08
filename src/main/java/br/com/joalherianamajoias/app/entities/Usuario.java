@@ -35,8 +35,8 @@ public class Usuario {
 	@Column(name = "senha", nullable = false, unique = true, length = 50)
 	private String senha;
 	
-	@Column(name = "dt_nascimento", unique = false)
-	private LocalDate dataNascimento;
+	@Column(name = "data_nascimento", unique = false)
+	private LocalDate data_nascimento;
 	
 	@ManyToOne
 	@JoinColumn(name = "tipo_usuario", nullable = false)
@@ -48,14 +48,14 @@ public class Usuario {
 	}
 
 	public Usuario(Long idUsuario, String nomeUsuario, String cpf, String telefone, String email, String senha,
-			LocalDate dataNascimento) {
+			LocalDate data_nascimento) {
 		this.idUsuario = idUsuario;
 		this.nomeUsuario = nomeUsuario;
 		this.cpf = cpf;
 		this.telefone = telefone;
 		this.email = email;
 		this.senha = senha;
-		this.dataNascimento = dataNascimento;
+		this.data_nascimento = data_nascimento;
 	}
 
 	public Long getIdUsuario() {
@@ -106,12 +106,12 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public LocalDate getDataNascimento() {
-		return dataNascimento;
+	public LocalDate getData_nascimento() {
+		return data_nascimento;
 	}
 
-	public void setDataNascimento(LocalDate dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setData_nascimento(LocalDate data_nascimento) {
+		this.data_nascimento = data_nascimento;
 	}
 	
 	//Getters e setters
