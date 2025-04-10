@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         const numero= document.getElementById("numero").value;
         const bairro = document.getElementById("bairro").value;
         const cidade = document.getElementById("cidade").value;
-        const estado = document.getElementById("UF").value;
+        const UF = document.getElementById("UF").value;
         
         try{
             const response = await fetch ("http://localhost:8080/cadastroendereco", {
