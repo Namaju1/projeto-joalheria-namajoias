@@ -13,7 +13,6 @@ document.getElementById("cep").addEventListener("input", async function () {
 				alert("CEP não encontrado.");
 				return;
 			}
-<<<<<<< HEAD
 			document.getElementById("rua").value = dados.logradouro;
 			document.getElementById("numero").value = dados.numero;
 			document.getElementById("numero").value = dados.bairro;
@@ -21,15 +20,13 @@ document.getElementById("cep").addEventListener("input", async function () {
 			document.getElementById("cidade").value = dados.localidade;
 			document.getElementById("UF").value = dados.uf;
 			document.getElementById("complemento").value = dados.complemento;
-=======
-
+			
 			document.getElementById("rua").value = dados.logradouro || "";
 			document.getElementById("numero").value = ""; // Não vem da API, o usuário preenche
 			document.getElementById("bairro").value = dados.bairro || "";
 			document.getElementById("cidade").value = dados.localidade || "";
 			document.getElementById("UF").value = dados.uf || "";
 			document.getElementById("complemento").value = dados.complemento || "";
->>>>>>> b277da2 (salvandoooo)
 		} catch (error) {
 			alert("Erro ao buscar o endereço: " + error.message);
 		}

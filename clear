@@ -1,0 +1,109 @@
+[33mcommit d19cec9c30da6685b0f65a495591d171e9f1f2ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 0d2b9fc 01b8de2
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 22 09:13:37 2025 -0300
+
+    Endereco
+
+[33mcommit 0d2b9fc4464fbf9af8b684ec200e7b30acfbee42[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 22 09:11:53 2025 -0300
+
+    Endereco
+
+[33mcommit 01b8de2f7f7be195177017f5d62c6b0d05e2023f[m
+Author: nathvng <nathaliagabrielevenegasiqueira@gmail.com>
+Date:   Tue Apr 22 08:54:00 2025 -0300
+
+    Correção de conflitos
+
+[33mcommit 356691b0aa6fc7cc40666965b2099c2dc25c6b01[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 22 08:45:18 2025 -0300
+
+    alterações no endereço
+
+[33mcommit 9ad141736f08636d28d7e316740717caa594216e[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 22 07:54:17 2025 -0300
+
+    Correção divergencias
+
+[33mcommit 2e8e3f7612ded62d6e29eda9a5fc28b3ecdaa6de[m
+Author: nathvng <nathaliagabrielevenegasiqueira@gmail.com>
+Date:   Thu Apr 10 14:51:06 2025 -0300
+
+    sucesso cadastro arrumado
+
+[33mcommit 13abcfec5284308dfa2f549b06a95860eac6de46[m
+Author: nathvng <nathaliagabrielevenegasiqueira@gmail.com>
+Date:   Tue Apr 8 10:51:40 2025 -0300
+
+    endereco arrumado amem
+
+[33mcommit c1d3541df6512bc22fd7fa4c82512e3555e9ab43[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 8 10:19:57 2025 -0300
+
+    erros no spring arrumados
+
+[33mcommit 969041522cfd3352a37dd4057751ee7086f0ae94[m
+Author: Olivazz <contaprotisenai@gmail.con>
+Date:   Tue Apr 8 09:24:44 2025 -0300
+
+    novo botao
+
+[33mcommit 4912d0f4fd463f23a4e230c5eeee22f03956bc5c[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 8 09:12:03 2025 -0300
+
+    erros no spring sendo corrigidos
+
+[33mcommit 9db448522ff95b3593084adb96076cab43b7a5c5[m
+Author: nathvng <nathaliagabrielevenegasiqueira@gmail.com>
+Date:   Tue Apr 8 09:05:41 2025 -0300
+
+    alterações
+
+[33mcommit f8c9d22aa700183785581cea4e40fc047dcee0db[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 8 08:17:56 2025 -0300
+
+    Atualização do nome do usuario no script cadastro
+
+[33mcommit 7fdb8484042f4f98a975856180a3c8f2f636e9e3[m
+Merge: 3e4a2d2 f5f559e
+Author: vedilsonprado <vedilsonprado@gmail.com>
+Date:   Thu Apr 3 15:17:20 2025 -0300
+
+    Merge branch 'main' of https://github.com/Namaju1/projeto-joalheria-namajoias
+
+[33mcommit f5f559ed73cfecfdc44dca4f19a29cbe97e066c8[m
+Author: Olivazz <contaprotisenai@gmail.com>
+Date:   Thu Apr 3 08:15:32 2025 -0300
+
+    Alteração do front end para a versão funcional
+
+[33mcommit 3e4a2d26d22504c14989ecebd55c238f7ce3f8a3[m
+Author: vedilsonprado <vedilsonprado@gmail.com>
+Date:   Wed Apr 2 12:42:59 2025 -0300
+
+    Atualização do README.md
+
+[33mcommit 9c7f313d7caf3cb14e7f915b0f29a98c965142d2[m
+Author: jucastrox <juliacstro1@gmail.com>
+Date:   Tue Apr 1 10:56:19 2025 -0300
+
+    atualizei as alterações feitas na aula passada (js cadastro cliente, entidade usruário e produto, js cadastroproduto, data.sql e app.prop) e corrigi erros
+
+[33mcommit 19fdbfd39f99854e27636eefad70fd16e7e7d0c0[m
+Author: maziin07 <alvesbusiness10@gmail.com>
+Date:   Thu Mar 20 12:17:45 2025 -0300
+
+    Primeira publicação da Joalheria Namajoias
+
+[33mcommit 0b35f6954d166524e8d4a1c7b4bbad479f8c57f3[m
+Author: Matheus Alves <159180480+Maziin07@users.noreply.github.com>
+Date:   Thu Mar 20 07:47:04 2025 -0300
+
+    Initial commit
