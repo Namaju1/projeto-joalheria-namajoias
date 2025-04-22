@@ -14,7 +14,11 @@ document.getElementById("cep").addEventListener("input", async function() {
 				return;
 			}
 			document.getElementById("rua").value = dados.logradouro;
+<<<<<<< HEAD
 			document.getElementById("numero").value = dados.numero;
+=======
+			document.getElementById("numero").value = dados.bairro;
+>>>>>>> 8763c39 (alterações no cadastroproduto)
 			document.getElementById("bairro").value = dados.bairro;
 			document.getElementById("cidade").value = dados.localidade;
 			document.getElementById("UF").value = dados.uf;

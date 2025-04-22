@@ -33,7 +33,7 @@ public class Endereco {
 		@Column(name = "cidade", nullable = false)
 		private String cidade;
 		
-		@Column(name = "estado", length = 2)
+		@Column(name = "UF", length = 2)
 		private String estado;
 		
 		@Column(name = "complemento")
