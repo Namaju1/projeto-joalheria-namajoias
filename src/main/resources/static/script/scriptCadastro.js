@@ -52,5 +52,5 @@ document.addEventListener("DOMContentLoaded", function() {
 			console.error('Erro no cadastro:', error);
 			alert('Falha ao cadastrar pessoa. Tente novamente.');
 		});
-});
+});//teste 
 
