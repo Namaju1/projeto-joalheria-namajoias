@@ -10,13 +10,10 @@ document.getElementById("cep").addEventListener("input", async function() {
 			if (!response.ok) throw new Error("Erro ao buscar o CEP");
 
 			const dados = await response.json();
-
-<<<<<<< HEAD
-            if (dados.erro) {
+			  if (dados.erro) {
                 alert("CEP não encontrado.");
                 return;
             }
-=======
 			if (dados.erro) {
 				alert("CEP não encontrado.");
 				return;
@@ -43,26 +40,21 @@ document.getElementById("cep").addEventListener("input", async function() {
 		alert("CEP não encontrado.");
 		return;
 	}
->>>>>>> 9f299b190eb9d2855e5ed0866e9988ed3d9cbf5d
 
 	document.addEventListener("DOMContentLoaded", () => {
 		const form = document.getElementById("cadastroEnderecoForm");
 
-<<<<<<< HEAD
         } catch (error) {
             alert("Erro ao buscar o endereço: " + error.message);
         }
     }
-});
-=======
+);
+
 		// Verifica se o formulário foi encontrado
 		if (form) {
 			// Adiciona o ouvinte de evento para o envio do formulário
 			form.addEventListener("submit", async (event) => {
-				event.preventDefault();  // Impede o envio tradicional do formulário
->>>>>>> 9f299b190eb9d2855e5ed0866e9988ed3d9cbf5d
-
-				// Captura os dados do formulário
+				event.preventDefault();  // Impede o envio tradicional do formulário				// Captura os dados do formulário
 				const cep = document.getElementById("cep").value;
 				const rua = document.getElementById("rua").value;
 				const numero = document.getElementById("numero").value;
@@ -101,4 +93,4 @@ document.getElementById("cep").addEventListener("input", async function() {
 		} else {
 			console.error('Formulário não encontrado.');
 		}
-	});
+	
