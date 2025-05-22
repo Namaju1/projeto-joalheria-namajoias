@@ -10,28 +10,18 @@ document.getElementById("cep").addEventListener("input", async function() {
 			if (!response.ok) throw new Error("Erro ao buscar o CEP");
 
 			const dados = await response.json();
-			  if (dados.erro) {
-                alert("CEP não encontrado.");
-                return;
-            }
+
 			if (dados.erro) {
 				alert("CEP não encontrado.");
 				return;
 			}
+
 			document.getElementById("rua").value = dados.logradouro;
-			document.getElementById("numero").value = dados.numero;
-			document.getElementById("numero").value = dados.bairro;
 			document.getElementById("bairro").value = dados.bairro;
 			document.getElementById("cidade").value = dados.localidade;
 			document.getElementById("UF").value = dados.uf;
 			document.getElementById("complemento").value = dados.complemento;
 
-			document.getElementById("rua").value = dados.logradouro || "";
-			document.getElementById("numero").value = ""; // Não vem da API, o usuário preenche
-			document.getElementById("bairro").value = dados.bairro || "";
-			document.getElementById("cidade").value = dados.localidade || "";
-			document.getElementById("UF").value = dados.uf || "";
-			document.getElementById("complemento").value = dados.complemento || "";
 		} catch (error) {
 			alert("Erro ao buscar o endereço: " + error.message);
 		}
@@ -44,23 +34,18 @@ document.getElementById("cep").addEventListener("input", async function() {
 	document.addEventListener("DOMContentLoaded", () => {
 		const form = document.getElementById("cadastroEnderecoForm");
 
-        } catch (error) {
-            alert("Erro ao buscar o endereço: " + error.message);
-        }
-    }
-);
-
 		// Verifica se o formulário foi encontrado
 		if (form) {
 			// Adiciona o ouvinte de evento para o envio do formulário
 			form.addEventListener("submit", async (event) => {
-				event.preventDefault();  // Impede o envio tradicional do formulário				// Captura os dados do formulário
+				event.preventDefault();  // Impede o envio tradicional do formulário	Captura os dados do formulário
 				const cep = document.getElementById("cep").value;
 				const rua = document.getElementById("rua").value;
 				const numero = document.getElementById("numero").value;
 				const bairro = document.getElementById("bairro").value;
 				const cidade = document.getElementById("cidade").value;
 				const UF = document.getElementById("UF").value;
+				const complemento = document.getElementById("complemento").value;
 
 				try {
 					// Faz a requisição para salvar os dados
@@ -75,7 +60,8 @@ document.getElementById("cep").addEventListener("input", async function() {
 							numero,
 							bairro,
 							cidade,
-							UF
+							estado : UF,
+							complemento
 						}),
 					});
 
@@ -93,4 +79,5 @@ document.getElementById("cep").addEventListener("input", async function() {
 		} else {
 			console.error('Formulário não encontrado.');
 		}
-	
+	})
+});
