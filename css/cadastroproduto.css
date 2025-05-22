@@ -1,0 +1,179 @@
+/* Importação de Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* Reset e Configurações Básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Paleta de Cores Sofisticada */
+:root {
+    --primary-color: #4d9370; /* Tom de marrom dourado */
+    --secondary-color: #63636300; /* Bege dourado suave */
+    --accent-color: #4d9370; /* Marrom escuro */
+    --light-color: #F5F5F5; /* Branco pérola */
+    --text-color: #4d9370; /* Marrom escuro para texto */
+}
+
+/* Cabeçalho */
+.header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 30px;
+}
+
+.header a {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d9370;
+    padding: 0px 20px;
+    color: #4A8666;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.home-btn {
+    text-decoration: none;
+    background-color: white;
+    color: #4A8666;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 20px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 15px;
+    margin-left: 30px;
+}
+
+.home-btn:hover {
+    color: rgb(255, 255, 255);
+    color: var(--primary-color); /* Corrige a cor ao passar o mouse */
+}
+
+.header-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: var(--light-color);
+}
+
+/* Contêiner do Formulário */
+.form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Estilos dos Campos de Formulário */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.2);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botão de Envio */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3e7a55; /* Tom de verde mais escuro para hover */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4A8666;
+    color: white;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    .form-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilo para campos inválidos */
+.invalid {
+    border-color: red;
+    background-color: #f8d7da;
+}
