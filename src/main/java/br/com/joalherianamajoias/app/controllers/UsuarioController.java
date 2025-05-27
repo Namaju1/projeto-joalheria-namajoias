@@ -3,6 +3,8 @@ package br.com.joalherianamajoias.app.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -55,21 +57,14 @@ public class UsuarioController {
 	}
 		
 	@PostMapping("/login")
-	public Usuario login(@RequestBody Usuario loginRequest) {
-		//chama o método de autenticação do service passando o email e senha fornecidos no login 
-		//1. loginRequest.getEmail() - obtem o email enviado pelo usuário na requisição
-		//2. loginRequest.getSenha() - obtém a senha enviada pelo usuário na requisição
-		//3. usuarioService.autenticarPessoa(email, senha) - verifica no banco se existe um usuário com este email e se a senha é válida
-		//4. retorna o objeto usuario autenticado, ou null caso falha na autenticação
-		Usuario pessoa = usuarioService.autenticarPessoa(loginRequest.getEmail(), loginRequest.getSenha());
-		//verifica se o serviço retornou um usuário válido
-		if(pessoa != null) {
-		//se autenticado, retorna os dados do usuário
-		return pessoa;
-		//se não autenticado retorna null, indicando falha no login
-		}else {
-			return null;
-		}
-		}
+	public ResponseEntity<Usuario> login(@RequestBody Usuario loginRequest) {
+	    Usuario pessoa = usuarioService.autenticarPessoa(loginRequest.getEmail(), loginRequest.getSenha());
+	    if (pessoa != null) {
+	        return ResponseEntity.ok(pessoa);
+	    } else {
+	        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+	    }
+	}
+
 
 }
