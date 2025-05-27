@@ -12,65 +12,55 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_tipoproduto")
 public class TipoProduto {
-
 	// Atributos
-			@Id
-			@GeneratedValue(strategy = GenerationType.IDENTITY)
-			@Column(name = "idTipoProduto", nullable = false)
-			private Long idTipoProduto;
-			
-			@Column(name = "descricao", nullable = false, length = 100)
-			private String descricao;
-			
-			@Column(name = "nome", nullable = false, length = 100)
-			private String nome;
-			
-			@ManyToOne
-			@JoinColumn(name = "PRODUTO_id_produto")
-			private Produto produto;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "idTipoProduto", nullable = false)
+	private Long idTipoProduto;
 
-			// Construtores
-			public TipoProduto() {
+	@Column(name = "descricao", nullable = false, length = 100)
+	private String descricao;
 
-			}
-			
-			public TipoProduto(Long idTipoProduto, String descricao, String nome) {
-				this.idTipoProduto = idTipoProduto;
-				this.descricao = descricao;
-				this.nome = nome;
-			}
+	@Column(name = "nome", nullable = false, length = 100)
+	private String nome;
 
-			public Long getIdTipoProduto() {
-				return idTipoProduto;
-			}
+	@ManyToOne
+	@JoinColumn(name = "PRODUTO_id_produto")
+	private Produto produto;
 
-			public void setIdTipoProduto(Long idTipoProduto) {
-				this.idTipoProduto = idTipoProduto;
-			}
+	// Construtores
+	public TipoProduto() {
 
-			public String getDescricao() {
-				return descricao;
-			}
-
-			public void setDescricao(String descricao) {
-				this.descricao = descricao;
-			}
-
-			public String getNome() {
-				return nome;
-			}
-
-			public void setNome(String nome) {
-				this.nome = nome;
-			}
-
-			public Produto getProduto() {
-				return produto;
-			}
-
-			public void setProduto(Produto produto) {
-				this.produto = produto;
-			}
-
-			
+	}
+	public TipoProduto(Long idTipoProduto, String descricao, String nome, Produto produto) {
+		this.idTipoProduto = idTipoProduto;
+		this.descricao = descricao;
+		this.nome = nome;
+		this.produto = produto;
+	}
+	public Long getIdTipoProduto() {
+		return idTipoProduto;
+	}
+	public void setIdTipoProduto(Long idTipoProduto) {
+		this.idTipoProduto = idTipoProduto;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Produto getProduto() {
+		return produto;
+	}
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	
 }
