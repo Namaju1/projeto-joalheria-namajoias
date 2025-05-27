@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -38,6 +40,10 @@ public class Endereco {
 		
 		@Column(name = "complemento")
 		private String complemento;
+		
+		@ManyToOne
+		@JoinColumn(name="USUARIO_id_usuario")
+		private Usuario usuario;
 		
 
 //Construtores

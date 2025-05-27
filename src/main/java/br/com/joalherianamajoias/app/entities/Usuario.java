@@ -2,6 +2,8 @@ package br.com.joalherianamajoias.app.entities;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -32,7 +34,7 @@ public class Usuario {
 	@Column(name = "email", nullable = false, unique = true, length = 50)
 	private String email;
 	
-	@Column(name = "senha", nullable = false, unique = true, length = 50)
+	@Column(name = "senha", nullable = false, length = 50)
 	private String senha;
 	
 	@Column(name = "data_nascimento", unique = false)
@@ -40,6 +42,7 @@ public class Usuario {
 	
 	@ManyToOne
 	@JoinColumn(name = "tipo_usuario")
+	@JsonBackReference
 	private TipoUsuario tipoUsuario;
 
 	// Construtores

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const senha = document.getElementById('senha').value;
 
 
-		fetch('http://localhost:8080/cadastrocliente', {
+		fetch('http://localhost:8080/cadastrocliente/login', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
