@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		const descricao = document.getElementById("descricao").value;
 		const preco = parseFloat(document.getElementById("preco").value);
 		const imgUrl = document.getElementById("imgUrl").value;
-		const tipoProduto = {
+		const tipoProduto = {	
 			idTipoProduto: parseInt(document.getElementById("categoria").value)
 		}
-
+	
 		try {
 			const response = await fetch("http://localhost:8080/cadastroproduto", {
 				method: "POST",
