@@ -44,6 +44,11 @@ public class Usuario {
 	@JoinColumn(name = "tipo_usuario")
 	@JsonBackReference
 	private TipoUsuario tipoUsuario;
+	
+	@ManyToOne
+	@JoinColumn(name="ENDERECO_id_endereco")
+	private Endereco endereco;
+	
 
 	// Construtores
 	public Usuario() {
@@ -51,7 +56,7 @@ public class Usuario {
 	}
 
 	public Usuario(Long idUsuario, String nomeUsuario, String cpf, String telefone, String email, String senha,
-			LocalDate data_nascimento) {
+			LocalDate data_nascimento, Endereco endereco) {
 		this.idUsuario = idUsuario;
 		this.nomeUsuario = nomeUsuario;
 		this.cpf = cpf;
@@ -59,6 +64,7 @@ public class Usuario {
 		this.email = email;
 		this.senha = senha;
 		this.data_nascimento = data_nascimento;
+		this.endereco = endereco;
 	}
 
 	public Long getIdUsuario() {
@@ -116,7 +122,23 @@ public class Usuario {
 	public void setData_nascimento(LocalDate data_nascimento) {
 		this.data_nascimento = data_nascimento;
 	}
+
+	public TipoUsuario getTipoUsuario() {
+		return tipoUsuario;
+	}
+
+	public void setTipoUsuario(TipoUsuario tipoUsuario) {
+		this.tipoUsuario = tipoUsuario;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
 	
-	//Getters e setters
 	
 }
