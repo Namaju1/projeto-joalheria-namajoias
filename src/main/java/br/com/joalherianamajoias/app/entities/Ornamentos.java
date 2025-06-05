@@ -25,10 +25,6 @@ public class Ornamentos {
 		@Column(name = "descricao", unique = false)
 		private String descricao;
 		
-		@ManyToOne
-		@JoinColumn(name = "ORNAMENTOSPRODUTO_id_ornamentosproduto")
-		private OrnamentosProduto ornamentosproduto;
-		
 		//Construtores
 		public Ornamentos() {
 
@@ -38,6 +34,7 @@ public class Ornamentos {
 			this.nome = nome;
 			this.descricao = descricao;
 		}
+		
 		public Long getIdOrnamentos() {
 			return idOrnamentos;
 		}
@@ -55,12 +52,6 @@ public class Ornamentos {
 		}
 		public void setDescricao(String descricao) {
 			this.descricao = descricao;
-		}
-		public OrnamentosProduto getOrnamentosproduto() {
-			return ornamentosproduto;
-		}
-		public void setOrnamentosproduto(OrnamentosProduto ornamentosproduto) {
-			this.ornamentosproduto = ornamentosproduto;
 		}
 		
 }

@@ -55,3 +55,9 @@ INSERT IGNORE INTO tb_usuario (id_usuario, nome_usuario, senha, cpf, email, tele
 (4, 'Guilherme Jacob', 'gui123', '33697845210', 'gui@gmail.com', '15887542102', '2007-12-11', 4, 2),
 (5, 'Vedilson Silva', 'ved123', '33687521045', 'ved@gmail.com', '15662598754', '1985-07-10', 5, 2);
 
+INSERT INTO tb_ornamentos (id_ornamentos, descricao, nome) VALUES
+(1, 'Pedra preciosa de alto valor, conhecida por sua dureza e brilho incomparável.', 'Diamante'),
+(2, 'Cristal sintético com aparência semelhante ao diamante, muito utilizado em joias acessíveis.', 'Zircônia'),
+(3, 'Pedra semipreciosa de cor verde intensa, símbolo de renovação e prosperidade.', 'Esmeralda'),
+(4, 'Gema preciosa vermelha, símbolo de paixão e energia.', 'Rubi'),
+(5, 'Pedra azul profunda, associada à sabedoria e à nobreza.', 'Safira');
