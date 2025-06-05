@@ -27,25 +27,35 @@ public class Produto {
 	@Column(name = "preco", nullable = false, length = 100)
 	private double preco;
 
-	@Column(name = "imgUrl", nullable = false, length = 300, unique = false)
+	@Column(name = "imgUrl", nullable = false, length = 1000, unique = false)
 	private String imgUrl;
 
 	@ManyToOne
-	@JoinColumn(name = "tipo_produto", nullable = false)
-	private TipoProduto tipoProduto;
+    @JoinColumn(name = "tipo_produto", nullable = false)
+    private TipoProduto tipoProduto;
+    
+    @ManyToOne
+    @JoinColumn(name ="categoriaProduto", nullable = true)
+    private CategoriaProduto categoriaProduto;
+    
+    @ManyToOne
+    @JoinColumn(name ="ornamentosProduto", nullable = true)
+    private Ornamentos ornamentos;
 
 //Construtores
 	public Produto() {
 
 	}
 
-	public Produto(Long idProduto, String nomeProduto, String descricao, double preco, String imgUrl, TipoProduto tipoProduto) {
+	public Produto(Long idProduto, String nomeProduto, String descricao, double preco, String imgUrl, TipoProduto tipoProduto, CategoriaProduto categoriaProduto, Ornamentos ornamentos ) {
 		this.idProduto = idProduto;
 		this.nomeProduto = nomeProduto;
 		this.descricao = descricao;
 		this.preco = preco;
 		this.imgUrl = imgUrl;
 		this.tipoProduto = tipoProduto;
+	    this.categoriaProduto = categoriaProduto;
+	    this.ornamentos = ornamentos;
 	}
 
 	public Long getIdProduto() {
@@ -95,5 +105,20 @@ public class Produto {
 	public void setTipoProduto(TipoProduto tipoProduto) {
 		this.tipoProduto = tipoProduto;
 	}
-	
+
+	public CategoriaProduto getCategoriaProduto() {
+		return categoriaProduto;
+	}
+
+	public void setCategoriaProduto(CategoriaProduto categoriaProduto) {
+		this.categoriaProduto = categoriaProduto;
+	}
+
+	public Ornamentos getOrnamentos() {
+		return ornamentos;
+	}
+
+	public void setOrnamentos(Ornamentos ornamentos) {
+		this.ornamentos = ornamentos;
+	}	
 }
