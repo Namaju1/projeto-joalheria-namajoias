@@ -24,19 +24,14 @@ public class TipoProduto {
 	@Column(name = "nome", nullable = false, length = 100)
 	private String nome;
 
-	@ManyToOne
-	@JoinColumn(name = "PRODUTO_id_produto")
-	private Produto produto;
-
 	// Construtores
 	public TipoProduto() {
 
 	}
-	public TipoProduto(Long idTipoProduto, String descricao, String nome, Produto produto) {
+	public TipoProduto(Long idTipoProduto, String descricao, String nome) {
 		this.idTipoProduto = idTipoProduto;
 		this.descricao = descricao;
 		this.nome = nome;
-		this.produto = produto;
 	}
 	public Long getIdTipoProduto() {
 		return idTipoProduto;
@@ -55,12 +50,6 @@ public class TipoProduto {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-	public Produto getProduto() {
-		return produto;
-	}
-	public void setProduto(Produto produto) {
-		this.produto = produto;
 	}
 	
 }
