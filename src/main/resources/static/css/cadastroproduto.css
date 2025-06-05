@@ -1,7 +1,6 @@
-/* Importação de Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
 
-/* Reset e Configurações Básicas */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,16 +14,15 @@ body {
     line-height: 1.6;
 }
 
-/* Paleta de Cores Sofisticada */
 :root {
-    --primary-color: #4d9370; /* Tom de marrom dourado */
-    --secondary-color: #63636300; /* Bege dourado suave */
-    --accent-color: #4d9370; /* Marrom escuro */
-    --light-color: #F5F5F5; /* Branco pérola */
-    --text-color: #4d9370; /* Marrom escuro para texto */
+    --primary-color: #4d9370;
+    --secondary-color: #63636300; 
+    --accent-color: #4d9370;
+    --light-color: #F5F5F5; 
+    --text-color: #4d9370; 
 }
 
-/* Cabeçalho */
+
 .header {
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -68,7 +66,7 @@ nav a {
 
 .home-btn:hover {
     color: rgb(255, 255, 255);
-    color: var(--primary-color); /* Corrige a cor ao passar o mouse */
+    color: var(--primary-color);
 }
 
 .header-subtitle {
@@ -78,7 +76,7 @@ nav a {
     color: var(--light-color);
 }
 
-/* Contêiner do Formulário */
+
 .form-container {
     max-width: 800px;
     margin: 2rem auto;
@@ -96,7 +94,6 @@ nav a {
     font-size: 2rem;
 }
 
-/* Estilos dos Campos de Formulário */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -128,7 +125,7 @@ nav a {
     min-height: 100px;
 }
 
-/* Botão de Envio */
+
 .submit-btn {
     display: block;
     width: 100%;
@@ -145,10 +142,10 @@ nav a {
 }
 
 .submit-btn:hover {
-    background-color: #3e7a55; /* Tom de verde mais escuro para hover */
+    background-color: #3e7a55;
 }
 
-/* Rodapé */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -156,7 +153,7 @@ footer {
     color: white;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 600px) {
     .form-container {
         margin: 1rem;
@@ -172,7 +169,7 @@ footer {
     }
 }
 
-/* Estilo para campos inválidos */
+
 .invalid {
     border-color: red;
     background-color: #f8d7da;

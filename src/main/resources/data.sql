@@ -1,5 +1,5 @@
 INSERT IGNORE INTO tb_tipousuario (id_tipo_usuario, nome_usuario) VALUES 
-(1, 'Adimin'),
+(1, 'Admin'),
 (2, 'Cliente'),
 (3, 'Vendedor'),
 (4, 'Gerente');
@@ -55,7 +55,7 @@ INSERT IGNORE INTO tb_usuario (id_usuario, nome_usuario, senha, cpf, email, tele
 (4, 'Guilherme Jacob', 'gui123', '33697845210', 'gui@gmail.com', '15887542102', '2007-12-11', 4, 2),
 (5, 'Vedilson Silva', 'ved123', '33687521045', 'ved@gmail.com', '15662598754', '1985-07-10', 5, 2);
 
-INSERT INTO tb_ornamentos (id_ornamentos, descricao, nome) VALUES
+INSERT IGNORE INTO tb_ornamentos (id_ornamentos, descricao, nome) VALUES
 (1, 'Pedra preciosa de alto valor, conhecida por sua dureza e brilho incomparável.', 'Diamante'),
 (2, 'Cristal sintético com aparência semelhante ao diamante, muito utilizado em joias acessíveis.', 'Zircônia'),
 (3, 'Pedra semipreciosa de cor verde intensa, símbolo de renovação e prosperidade.', 'Esmeralda'),

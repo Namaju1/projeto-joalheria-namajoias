@@ -26,12 +26,8 @@ public class Produto {
 
 	@Column(name = "preco", nullable = false, length = 100)
 	private double preco;
-
-<<<<<<< HEAD
-	@Column(name = "imgUrl", nullable = false, unique = false)
-=======
+	
 	@Column(name = "imgUrl", nullable = false, length = 1000, unique = false)
->>>>>>> 12852cd4d6941685d2632021551c49821e84577d
 	private String imgUrl;
 
 	@ManyToOne
