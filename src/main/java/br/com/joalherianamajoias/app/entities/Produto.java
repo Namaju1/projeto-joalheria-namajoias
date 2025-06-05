@@ -21,13 +21,13 @@ public class Produto {
 	@Column(name = "nomeProduto", unique = false)
 	private String nomeProduto;
 
-	@Column(name = "descricao", nullable = false, length = 300, unique = false)
+	@Column(name = "descricao", nullable = false, unique = false)
 	private String descricao;
 
 	@Column(name = "preco", nullable = false, length = 100)
 	private double preco;
 
-	@Column(name = "imgUrl", nullable = false, length = 300, unique = false)
+	@Column(name = "imgUrl", nullable = false, unique = false)
 	private String imgUrl;
 
 	@ManyToOne
