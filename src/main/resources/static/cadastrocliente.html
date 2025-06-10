@@ -11,8 +11,9 @@
         <h1>Cadastro de Usuário</h1>
         <form id="cadastroClienteForm" action="" method="post">
             <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nomeUsuario" name="nomeUsuario" maxlength="50" pattern="[A-Za-z\s]+" title="Apenas letras são permitidas" required>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nomeUsuario" name="nomeUsuario" maxlength="50"
+				       pattern="[A-Za-zÀ-ÿ\s]+" title="Apenas letras e espaços são permitidos" required>
             </div>
             <div>
                 <label for="senha">Senha:</label>
